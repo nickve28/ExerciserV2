@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import { Flex, FlexItem } from './common/Flex';
-import { VerticalList, VerticalListItem } from './common/VerticalList';
-import { getPadding, getSpacing } from './GlobalStyling';
-import { Navigation } from './modules/Navigation';
+import { Flex, FlexItem } from "./common/Flex";
+import { VerticalList, VerticalListItem } from "./common/VerticalList";
+import { Navigation } from "./modules/Navigation";
 
 const AppContainer = styled.div`
   width: 100%;

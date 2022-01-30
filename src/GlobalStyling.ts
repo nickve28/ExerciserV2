@@ -4,11 +4,11 @@ const basePadding = 0.25; // rem = 4 pixels
 export const getPadding = (size: number) => `${size * basePadding}rem`;
 export const getSpacing = getPadding;
 
-const fontSizes = {
-    small: 0.75,
-    default: 0.875,
-    title: 1.125,
-}
+export const fontSizes = {
+  small: 0.75,
+  default: 0.875,
+  title: 1.125,
+};
 
 export const GlobalStyling = createGlobalStyle`
     html {
