@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
+import { Flex, FlexItem } from './common/Flex';
+import { VerticalList, VerticalListItem } from './common/VerticalList';
 import { getPadding, getSpacing } from './GlobalStyling';
+import { Navigation } from './modules/Navigation';
 
 const AppContainer = styled.div`
   width: 100%;
@@ -10,36 +13,6 @@ const AppContainer = styled.div`
     width: inherit;
     height: inherit;
   }
-`;
-
-type FlexProps = {
-  flexDirection?: "row" | "column";
-}
-
-const Flex = styled.div<FlexProps>`
-  display: flex;
-  flex-direction: ${props => props.flexDirection || "row"}
-`
-
-type FlexItemProps = {
-  flex: React.CSSProperties["flex"]
-};
-
-const FlexItem = styled.div<FlexItemProps>`
-  flex: ${props => props.flex} 
-`
-
-const Navigation = styled.nav`
-  background: aliceblue;
-  height: ${getSpacing(8)};
-`;
-
-const VerticalList = styled.ul`
-  display: flex;
-`;
-
-const VerticalListItem = styled.li`
-  padding: ${getPadding(2)};
 `;
 
 function App() {
