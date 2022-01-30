@@ -1,11 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { StyleSheetManager } from 'styled-components';
 import App from './App';
+import { CSSReset } from './CSSReset';
+import { GlobalStyling } from './GlobalStyling';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StyleSheetManager disableVendorPrefixes>
+      <>
+        <CSSReset />
+        <GlobalStyling />
+        <App />
+      </>
+    </StyleSheetManager>
   </React.StrictMode>,
   document.getElementById('root')
 );
